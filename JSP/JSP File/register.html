@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=Big5">
+        <title>Register</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            .home {
+                font-family: "Times New Roman";
+                font-size: 25px; 
+                text-align: left;
+            }
+            h1 {
+                font-family: "Times New Roman"; 
+                font-size: 50px;
+                text-align: center;
+                background: #FFC0CB;
+            }
+            h3 {
+                font-family: "Times New Roman";
+                font-size: 18px;
+                text-align: center;
+            }
+            .text {
+                font-family: "Times New Roman";
+                font-size: 20px;
+                text-align: center;
+            }
+            .Menu {
+                font-family: "Times New Roman";
+                font-size: 20px; 
+                text-align: center;
+            }
+            .date {
+                font-family: "Times New Roman";
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <div class="home">    
+        <h3><a href="index.jsp"><img src="img/home.png" width="3%"/><br>Home</a></h3>
+    </div>
+
+    <h1>Registered &nbsp;&nbsp; Member</h1>
+    <h3><a href="login.jsp">Already have an account？Sign in now！</a></h3><br><br>
+
+    <form action="profile.jsp" method="action">        
+        <div class="text">
+            Account &nbsp;&nbsp; Number<br>
+            <input type="text" name="userId" placeholder="Please enter your account" size="35"><br><br>
+            Password<br>
+            <input type="password" name="userPassword" placeholder="Please enter your password" size="35"><br><br>
+            Name<br>
+            <input type="text" name="userName" placeholder="Please enter your name" size="35"><br><br>
+            E-mail<br>
+            <input type="email" name="mail" placeholder="Please enter your e-mail"size="35"><br><br>
+            Mobile &nbsp;&nbsp; Phone<br>
+            <input type="tel" pattern="[0-9]{4}(\-[0-9]{6})"  placeholder="EX:0932-123456"
+                   title="EX:0932-123456" name="mobilePhone" size="35"><br><br>
+            Home &nbsp;&nbsp; Phone<br>
+            <input type="tel" pattern="[0-9]{2}(\-[0-9]{4})(\-[0-9]{4})" placeholder="EX:04-1234-5678"
+                   title="EX:04-1234-5678" name="homePhone" size="35"><br><br>
+            Address<br>
+            <input type="text" name="adress" placeholder="Please enter your address" size="35"><br><br>
+        </div>
+
+        <div class="Menu">
+            Date &nbsp;&nbsp; Of &nbsp;&nbsp Birth<br>
+            <input class="date" type="date" name="userBirth"><br><br>
+            Gender<br>
+            <select name="gender">
+                <option value="Please choose">Please &nbsp; Choose</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+            Profession<br>
+            <select Name="profession">
+                <option value="Please choose">Please &nbsp; Choose</option>
+                <option value="Office worker">Office &nbsp; Worker</option>
+                <option value="Free industry">Free &nbsp; Industry</option>
+                <option value="Student">Student</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+            Education &nbsp;&nbsp; Level<br>
+            <select name="education">
+                <option value="Please choose">Please &nbsp; Choose</option>
+                <option value="Doctoral diploma">Doctoral &nbsp; Diploma</option>
+                <option value="Graduate diploma">Graduate &nbsp; Diploma</option>
+                <option value="Bachelor degree">Bachelor &nbsp; Degree</option>
+                <option value="Senior middle school">Senior &nbsp; Middle &nbsp; School</option>
+                <option value="Secondary">Secondary</option>
+                <option value="In school">In &nbsp; School</option>
+            </select><br><br><br>
+
+            <input id="submit" class="w3-button w3-teal" type="submit" value="Confirm">
+            <input id="reset" class="w3-button w3-red" type="reset" value="Re-Enter">
+        </div>
+    </form><br>
+</html>
